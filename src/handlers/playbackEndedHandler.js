@@ -17,7 +17,7 @@ module.exports = {
     );
     },
     async handle(handlerInput) {
-        if (handlerInput.requestEnvelope.request.type === 'AudioPlayer.PlaybackStopped') {
+        if (handlerInput.requestEnvelope.request.type.startsWith('AudioPlayer.')) {
             let attributes = await handlerInput.attributesManager.getPersistentAttributes();
             attributes.offsetInMilliseconds = getOffset(handlerInput);
         }
