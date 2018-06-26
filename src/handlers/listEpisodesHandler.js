@@ -2,7 +2,7 @@
 const findEpisodeFromRSS = require('../shared/findEpisodeFromRSS');
 
 const copy = {
-    reprompt: 'Which episode would you like to listen to?'
+    reprompt: 'Which episode would you like to play?'
 }
 
 module.exports = {

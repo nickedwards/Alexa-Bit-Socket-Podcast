@@ -3,7 +3,7 @@ const cardImages = require('../shared/imageUrls').cardImages;
 
 const copy = {
 	nothingToResume: 'You aren\'t currently listening to an episode. ',
-	nothingToResumeReprompt: 'Which episode would you like to listen to?'
+	nothingToResumeReprompt: 'Which episode would you like to play?'
 };
 
 /**
