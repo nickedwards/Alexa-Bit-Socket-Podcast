@@ -1,0 +1,5 @@
+lambda-local
+.nyc_output
+coverage
+node_modules
+index.zip

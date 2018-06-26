@@ -1,0 +1,91 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bit socket",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ListEpisodes",
+                    "slots": [],
+                    "samples": [
+                        "list podcasts",
+                        "list podcasts please",
+                        "list episodes",
+                        "list episodes please",
+                        "a list of episodes",
+                        "a list of episodes please",
+                        "what podcasts are available",
+                        "what podcasts are available please",
+                        "which podcasts are available",
+                        "which podcasts are available please"
+                    ]
+                },
+                {
+                    "name": "PlayEpisode",
+                    "slots": [
+                        {
+                            "name": "episodeNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{episodeNumber}",
+                        "{episodeNumber} please",
+                        "episode {episodeNumber}",
+                        "episode {episodeNumber} please",
+                        "podcast {episodeNumber}",
+                        "podcast {episodeNumber} please",
+                        "play episode {episodeNumber}",
+                        "play episode {episodeNumber} please",
+                        "play podcast {episodeNumber}",
+                        "play podcast {episodeNumber} please"
+                    ]
+                },
+                {
+                    "name": "PlayLatestEpisode",
+                    "slots": [],
+                    "samples": [
+                        "latest",
+                        "listen",
+                        "latest episode",
+                        "latest episode please",
+                        "latest podcast",
+                        "latest podcast please",
+                        "listen to the latest podcast",
+                        "listen to the latest podcast please",
+                        "play",
+                        "play please",
+                        "play episode",
+                        "play episode please",
+                        "play podcast",
+                        "play podcast please",
+                        "play latest",
+                        "play latest please",
+                        "start",
+                        "start please"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
