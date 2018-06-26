@@ -32,14 +32,10 @@
     }
   },
   "request": {
-    "type": "IntentRequest",
+    "type": "AudioPlayer.PlaybackFinished",
     "requestId": "amzn1.echo-api.request.123",
     "timestamp": "2018-06-22T13:13:38Z",
     "locale": "en-GB",
-    "intent": {
-      "name": "AudioPlayer.PlaybackFinished",
-      "confirmationStatus": "NONE"
-    },
-    "offsetInMilliseconds": 100
+    "offsetInMilliseconds": 10000
   }
 }

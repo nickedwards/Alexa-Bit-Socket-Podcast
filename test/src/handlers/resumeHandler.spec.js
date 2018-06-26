@@ -38,26 +38,5 @@ describe("ResumeHandler", function() {
         r.outputSpeech.ssml.should.startWith('<speak>');
         r.outputSpeech.ssml.should.endWith('</speak>');
 
-    }),
-
-    it('responds with reprompt', () => {
-
-        response.should.have.property("response");
-        let r = response.response;
-
-        r.should.have.property("reprompt");
-        r.reprompt.outputSpeech.should.have.property("type");
-        r.reprompt.outputSpeech.type.should.equal('SSML');
-        r.reprompt.outputSpeech.should.have.property("ssml");
-        r.reprompt.outputSpeech.ssml.should.startWith('<speak>');
-        r.reprompt.outputSpeech.ssml.should.endWith('</speak>');
-
-    }),
-
-    it('keeps the session open',  () => {
-
-        let r = response.response;
-        r.should.have.property("shouldEndSession");
-        r.shouldEndSession.should.be.false;
-    });
+    })
 });

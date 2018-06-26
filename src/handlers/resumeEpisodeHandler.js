@@ -18,7 +18,7 @@ module.exports = {
     },
     async handle(handlerInput) {
         let attributes = await handlerInput.attributesManager.getPersistentAttributes();
-        if (attributes.episodeUrl && attributes.episodeTitle) {
+        if (attributes.episodeMp3Url && attributes.episodeTitle) {
             let offset = attributes.offsetInMilliseconds || 0;
             let cardData = {
                 title: 'Playing Episode ' + attributes.episodeNumber,
