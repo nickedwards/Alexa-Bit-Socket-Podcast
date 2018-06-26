@@ -22,7 +22,7 @@ module.exports = {
             let offset = attributes.offsetInMilliseconds || 0;
             let cardData = {
                 title: 'Playing Episode ' + attributes.episodeNumber,
-                content: attributes.episodeTitle + ': ' + attributes.episodeWebUrl,
+                content: attributes.episodeTitle + ': ' + attributes.episodeDescription,
                 images: cardImages
             }
 

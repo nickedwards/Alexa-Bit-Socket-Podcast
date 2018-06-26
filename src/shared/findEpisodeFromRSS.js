@@ -23,15 +23,15 @@ function getRssData() {
 let allEpisodes;
 
 module.exports = {
-    singleEpisode: function(slots) {
+    singleEpisode: function(episodeNumber) {
         return new Promise((resolve, reject) => {
             getRssData().then(function(allEpisodes) {
                 let foundEpisode,
                     foundEpisodeNumber;
                 // podcast slot has been provided, we're looking for a specific episode
-                if (slots && slots.episodeNumber && slots.episodeNumber.value) {
-                    foundEpisode = allEpisodes.reverse()[slots.episodeNumber.value - 1]; // -1 as array starts at 0
-                    foundEpisodeNumber = slots.episodeNumber.value;
+                if (episodeNumber) {
+                    foundEpisode = allEpisodes.reverse()[episodeNumber - 1]; // -1 as array starts at 0
+                    foundEpisodeNumber = episodeNumber;
 
                     // podcast number has not been found, error out
                     if (typeof foundEpisode === 'undefined') {
