@@ -1,7 +1,7 @@
 const rssToJson = require("rss-to-json");
 
 const copy = {
-    podcastNotFound: 'Sorry, I couldn\'t find that podcast.',
+    podcastNotFound: 'Sorry, I couldn\'t find that episode.',
     listOfEpisodes : 'There are ::numEpisodes:: episodes available. The latest 5 episodes are:'
 };
 
@@ -35,7 +35,7 @@ module.exports = {
 
                     // podcast number has not been found, error out
                     if (typeof foundEpisode === 'undefined') {
-                        return reject(copy.podcastNotFound);
+                        return reject(new Error(copy.podcastNotFound));
                     }
                 // otherwise, return the latest episode
                 } else {

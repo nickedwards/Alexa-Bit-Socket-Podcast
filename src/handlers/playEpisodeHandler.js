@@ -2,6 +2,10 @@
 const findEpisodeFromRSS = require('../shared/findEpisodeFromRSS');
 const cardImages = require('../shared/imageUrls').cardImages;
 
+const copy = {
+    reprompt: 'Which episode would you like to play?'
+}
+
 module.exports = {
     canHandle(handlerInput) {
         return ( // latest or specific episode number
@@ -90,6 +94,12 @@ module.exports = {
                     cardData.images.smallImageUrl,
                     cardData.images.largeImageUrl
                 )
+                .getResponse();
+        })
+        .catch((err) => {
+            return handlerInput.responseBuilder
+                .speak(err.message + ' <break time=\"1s\"/> ' + copy.reprompt)
+                .reprompt(copy.reprompt)
                 .getResponse();
         });
     },

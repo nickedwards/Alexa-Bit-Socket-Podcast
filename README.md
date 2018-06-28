@@ -1,4 +1,4 @@
-A skill for Amazon Alexa, which allows you to play any episode of the Bit Socket Podcast.
+A skill for Amazon Alexa, which allows you to listen to episodes of the [Bit Socket Podcast](http://www.bit-socket.com/podcast/).
 
 Example utterances:
 
