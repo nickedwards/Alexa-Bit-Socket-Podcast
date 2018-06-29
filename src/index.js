@@ -6,6 +6,7 @@ const Alexa = require('ask-sdk');
 // handlers
 const launchRequestHandler   = require('./handlers/launchRequestHandler');
 const playEpisodeHandler     = require('./handlers/playEpisodeHandler');
+const describeEpisodeHandler = require('./handlers/describeEpisodeHandler');
 const listEpisodesHandler    = require('./handlers/listEpisodesHandler');
 const resumeEpisodeHandler   = require('./handlers/resumeEpisodeHandler');
 const playbackEndedHandler   = require('./handlers/playbackEndedHandler');
@@ -21,6 +22,7 @@ exports.handler = skillBuilder
         .addRequestHandlers(
             launchRequestHandler,
             playEpisodeHandler,
+            describeEpisodeHandler,
             listEpisodesHandler,
             resumeEpisodeHandler,
             playbackEndedHandler,
