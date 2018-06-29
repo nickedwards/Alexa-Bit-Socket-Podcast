@@ -1,7 +1,7 @@
 
 const copy = {
     welcomeMessage: 'Welcome to the Bit Socket Podcast. Which episode would you like to play?',
-    welcomeReprompt: 'You can say "play latest" to listen to our latest episode, or "list podcasts" to hear about other episodes. Say "help" for other options.',
+    welcomeReprompt: 'You can say "play latest" to listen to our latest episode, or ask for a specific episode number. Say "help" for other options. What would you like to do?',
     welcomeBackMessage: 'Welcome back! You can continue listening to ::episodeTitle::, by saying "resume", or choose to play a different episode. Which episode would you like to play?'
 };
 

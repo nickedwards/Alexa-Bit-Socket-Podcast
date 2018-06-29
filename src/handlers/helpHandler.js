@@ -1,6 +1,6 @@
 
 const copy = {
-    message: 'You can play a specific episode number by saying "play episode twelve", or can list the most recent episode titles by saying "list episodes"',
+    message: 'You can play a specific episode number by saying, for example, "play episode twelve", list the most recent episode titles by saying "list episodes", or can ask for more information about an episode by asking, for example, "more information about episode fifteen".',
     reprompt: 'Which episode would you like to play?'
 };
 
