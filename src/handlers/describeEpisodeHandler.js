@@ -16,7 +16,6 @@ module.exports = {
         );
     },
     async handle(handlerInput) {
-        let attributes = await handlerInput.attributesManager.getPersistentAttributes();
         // which episode number to play. If 0 is passed in, it will play the latest episode
         let episodeNumber = 0;
         if (
@@ -29,7 +28,7 @@ module.exports = {
 
         return findEpisodeFromRSS.singleEpisode(episodeNumber)
         .then((episodeDetails) => {
-            let message = attributes.episodeTitle + ': ' + attributes.episodeDescription;
+            let message = episodeDetails.episodeTitle + ': ' + episodeDetails.episodeDescription;
             return handlerInput.responseBuilder
                 .speak(message + ' <break time=\"1s\"/> ' + copy.reprompt)
                 .reprompt(copy.reprompt)
